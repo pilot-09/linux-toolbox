@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Prints basic system information (host, uptime, disk, memory)
 set -euo pipefail
 
 echo "Host: $(hostname)"
