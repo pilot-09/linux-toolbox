@@ -114,6 +114,31 @@ nav a.active {
     border-top: none;
 }
 
+article {
+    padding: 6px 0 10px;
+}
+
+article + article {
+    margin-top: 8px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 18px 0;
+    background: linear-gradient(90deg, transparent, rgba(86, 240, 144, 0.22), transparent);
+    opacity: 0.6;
+}
+
+ul,
+ol {
+    margin: 10px 0 12px;
+}
+
+li {
+    margin: 8px 0;
+}
+
 h1 {
     text-align: center;
     color: #5a8e6f;
