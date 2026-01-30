@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Bash/Linux | A Place to Learn</title>
+        <link rel="stylesheet" href="learning.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>Notes from the Inner Shell</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inner-shell.html">Inner Shell</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a class="active" href="bash.html">Bash/Linux</a></li>
+            </ul>
+        </nav>
+        <div class="content-section">
+<h1>Bash/Linux</h1>
+            <p>
+            Bash ("Bourne Again SHell") is an interactive command interpreter and scripting language
+            developed for Unix-like operating systems. It is designed as a free software alternative
+            for the Bourne Shell (sh).
+            </p>
+            <p>
+            Linux is the operating system layer that provides the kernel, system services, and tools.
+            Bash is one of the primary ways you interact with Linux, especially when working in a terminal.
+            Together they form the core workflow for navigating files, running programs, and automating tasks.
+            </p>
+            <p>
+            This page will grow into a practical reference: the kind of commands and concepts you reach for
+            when installing software, checking system health, or writing quick scripts. It's meant to be
+            concise, useful, and easy to scan when you're in the middle of a task.
+            </p>
+            <p>
+            The programming style here is pragmatic and composable: small commands that do one thing well,
+            connected through pipes and redirection to build larger workflows. Scripts tend to be short,
+            focused, and optimized for clarity when you need results fast.
+            </p>
+        </div>
+        <div class="content-section">
+<h2>Common Bash Commands</h2>
+            <ul>
+                <li>ls - List directory contents.</li>
+                <li>cd - Change directory.</li>
+                <li>pwd - Print working directory.</li>
+                <li>mkdir - Make a new directory.</li>
+                <li>rmdir - Remove an empty directory.</li>
+                <li>rm - Remove a file or directory.</li>
+                <li>cp - Copy a file or directory.</li>
+                <li>echo - Print a line of text.</li>
+                <li>cat - Concatenate and display file contents.</li>
+                <li>mv - Move or rename files or directories.</li>
+            </ul>
+        </div>
+        <div class="content-section">
+<h2>Linux Notes</h2>
+            <p>
+            Linux is a family of open-source operating systems built on the Linux kernel.
+            Most systems include GNU tools and a package manager to install software.
+            </p>
+        </div>
+        <div class="content-section">
+<h2>How Linux is Organized</h2>
+            <p>
+            Linux follows a standard filesystem layout so core files live in predictable places.
+            Everything is treated as a file, including devices and many system interfaces.
+            </p>
+            <ul>
+                <li><strong>/</strong> - Root of the filesystem.</li>
+                <li><strong>/home</strong> - User directories and personal files.</li>
+                <li><strong>/etc</strong> - System-wide configuration files.</li>
+                <li><strong>/var</strong> - Variable data like logs and caches.</li>
+                <li><strong>/usr</strong> - User programs and shared resources.</li>
+                <li><strong>/bin</strong> and <strong>/sbin</strong> - Essential commands and system tools.</li>
+            </ul>
+        </div>
+        <div class="content-section">
+<h2>Bash Basics</h2>
+            <p>
+            Bash is the default shell on many Linux systems. It reads commands, runs programs,
+            and can be scripted to automate repetitive tasks.
+            </p>
+            <ul>
+                <li><strong>Pipes</strong> combine commands: <code>ls | grep txt</code></li>
+                <li><strong>Redirection</strong> sends output to files: <code>echo hello &gt; file.txt</code></li>
+                <li><strong>Globbing</strong> matches patterns: <code>rm *.log</code></li>
+                <li><strong>History</strong> lets you reuse commands: press <code>↑</code> or use <code>history</code></li>
+            </ul>
+        </div>
+        <div class="content-section">
+<h2>Permissions Overview</h2>
+            <p>
+            Linux uses user, group, and other permissions for files and directories.
+            You can view them with <code>ls -l</code> and change them with <code>chmod</code> or <code>chown</code>.
+            </p>
+            <ul>
+                <li><strong>r</strong> = read, <strong>w</strong> = write, <strong>x</strong> = execute</li>
+                <li><strong>chmod 755 file</strong> sets common executable permissions</li>
+                <li><strong>chown user:group file</strong> changes ownership</li>
+            </ul>
+        </div>
+    </body>
+</html>
