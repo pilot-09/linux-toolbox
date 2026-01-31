@@ -240,6 +240,54 @@ h1 {
     opacity: 1;
 }
 
+.event-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-bottom: 6px;
+}
+
+.event-header h4 {
+    margin: 0;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #04130b;
+    background: rgba(86, 240, 144, 0.7);
+    box-shadow: inset 0 0 0 1px rgba(4, 19, 11, 0.35);
+}
+
+.tag.ack {
+    background: rgba(86, 240, 144, 0.75);
+    color: #04130b;
+}
+
+.tag.sup {
+    background: rgba(248, 113, 113, 0.8);
+    color: #1a0b0b;
+}
+
+.tag.dis {
+    background: rgba(250, 204, 21, 0.85);
+    color: #1a1304;
+}
+
+.tag.rum {
+    background: rgba(56, 189, 248, 0.8);
+    color: #041017;
+}
+
 h2 {
     color: #78b392;
     font-family: "IBM Plex Mono", "JetBrains Mono", "Fira Code", "Source Code Pro", "Consolas", "Menlo", "Monaco", monospace;
