@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 from pathlib import Path
+import markdown
 
 base_dir = Path(__file__).resolve().parent
 
 template_path = base_dir / "templates" / "layout.html"
 content_dir = base_dir / "content"
+content_src_dir = base_dir / "content-src"
 
 template = template_path.read_text()
 
@@ -353,12 +355,52 @@ def build_subnav(active_key: str | None, base: str) -> str:
     return f"        <div class=\"subnav\">\n{links_html}\n        </div>"
 
 
-for page in pages:
-    content_path = content_dir / page["content"]
-    if not content_path.exists():
-        raise FileNotFoundError(f"Missing content file: {content_path}")
+def render_markdown(md_text: str) -> str:
+    # Keep markdown rendering predictable and readable for prose-first notes.
+    return markdown.markdown(
+        md_text,
+        extensions=["extra", "sane_lists", "tables", "nl2br"],
+        output_format="html5",
+    )
 
-    content = indent_content(content_path.read_text())
+
+def extract_content_section(html_text: str) -> str:
+    marker = '<div class="content-section">'
+    if marker not in html_text:
+        return html_text
+
+    start = html_text.index(marker) + len(marker)
+    body_end = html_text.rfind("</body>")
+    if body_end == -1:
+        body_end = len(html_text)
+
+    section_plus_tail = html_text[start:body_end]
+    section_close = section_plus_tail.rfind("</div>")
+    if section_close == -1:
+        return section_plus_tail.strip() + "\n"
+
+    return section_plus_tail[:section_close].strip() + "\n"
+
+
+for page in pages:
+    html_fragment_path = content_dir / page["content"]
+    md_fragment_path = content_src_dir / f"{Path(page['content']).stem}.md"
+    html_fragment = None
+
+    if md_fragment_path.exists():
+        html_fragment = render_markdown(md_fragment_path.read_text())
+    elif html_fragment_path.exists():
+        # Backward-compatible fallback while migrating older workflows.
+        html_fragment = extract_content_section(html_fragment_path.read_text())
+    else:
+        raise FileNotFoundError(
+            f"Missing source files for {page['content']} (expected {md_fragment_path} or {html_fragment_path})"
+        )
+
+    # Keep content HTML in sync as a generated artifact.
+    html_fragment_path.write_text(html_fragment.rstrip() + "\n")
+
+    content = indent_content(html_fragment)
     subnav = build_subnav(page["active_subnav"], page["inner_shell_base"])
 
     html = (
