@@ -8,8 +8,8 @@
 - Resolution: fusion event creating entity called Echo
 
 ## Key Files
-- Characters: `content/characters.html` (main review target)
-- World context: `content/factions.html`, `content/history.html`, `content/infrastructure.html`
+- Characters: `characters.md` (main review target)
+- World context: `factions.md`, `history.md`, `infrastructure.md`
 
 ## Review Findings (2026-02-14) - see `review-findings.md`
 - Systemic voice problem: zero dialogue samples across all characters

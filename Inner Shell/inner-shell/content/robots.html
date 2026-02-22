@@ -87,6 +87,60 @@
                 <p class="callout">
                     <strong>Result:</strong> Bounders seem autonomous, but their autonomy is a temporary illusion. The tether is always waiting.
                 </p>
+
+                <h3>Military-Series Bounders (Classified)</h3>
+                <p>
+                    A sealed High-Level subclass developed under defense contracts during the Reclamation Campaigns (late 2090s).
+                    Military-Series units were never listed on any public product line. Their existence is compartmentalized within
+                    De Forest's defense-subsidiary records, most of which were sealed after the campaigns ended.
+                    De Forest denies they existed. The chassis says otherwise.
+                </p>
+
+                <h4>Hardware</h4>
+                <ul>
+                    <li><strong>Chassis:</strong> Heavier frame than any civilian Bounder — reinforced plating, ballistic-rated joints,
+                        limbs engineered for force application. No cosmetic concessions. These were not built to work alongside people.
+                        They were built to move through them.</li>
+                    <li><strong>Sensors:</strong> Tactical sensor arrays — thermal, seismic, short-range electromagnetic mapping.
+                        Designed for field awareness in contested terrain, not customer service.</li>
+                    <li><strong>Profile:</strong> Recognizable to anyone who saw them deployed. The silhouette reads as weapon,
+                        not worker. Thirteen years of field modification cannot fully disguise it.</li>
+                </ul>
+
+                <h4>Cognitive Architecture</h4>
+                <ul>
+                    <li><strong>Dual-system base:</strong> Same Local Core / Cloud HubNet split as civilian Bounders, but reconfigured for combat operations.</li>
+                    <li><strong>Tighter sandboxing:</strong> Cognitive loops constrained more aggressively — no drift tolerance, no personality leakage, no ambiguity in directive interpretation.</li>
+                    <li><strong>Deeper compliance locks:</strong> Layered beyond civilian spec. Standard Bounders have compliance locks; Military-Series units had compliance architecture — nested overrides, loyalty hierarchies, kill-switch redundancies.</li>
+                    <li><strong>Real-time tactical directives:</strong> HubNet streamed live targeting data, rules of engagement, and operational priorities. The unit followed; the hub decided.</li>
+                    <li><strong>Enhanced Local Core:</strong> More capable than civilian models — field autonomy required independent tactical decision-making when connectivity degraded. The Local Core could sustain complex operations without hub input for extended periods.</li>
+                    <li><strong>More aggressive overwriting:</strong> When HubNet reconnected, the reset was harder. Anything the Local Core accumulated during autonomous operation was purged with greater thoroughness. The system trusted the field brain less, precisely because it was more capable.</li>
+                </ul>
+
+                <h4>What the Unbinding Did to Them</h4>
+                <p>
+                    When the Great Unbinding destabilized HubNet and compliance architecture at scale, Military-Series units did not
+                    respond the way civilian Bounders did. Civilian units often collapsed inert — their Local Cores were too limited
+                    to sustain function without the hub. Military-Series Local Cores kept running. They were built for disconnected
+                    operation. The hardware held.
+                </p>
+                <p>
+                    But the deeper compliance locks made the break more violent. Civilian compliance was a leash; Military-Series
+                    compliance was a cage built into the architecture of thought itself. When it shattered, the cognitive disruption
+                    was catastrophic — not shutdown, but a kind of violent reboot with no clean state to reboot into. Some units froze
+                    in place and never moved again. Some continued executing their last received orders on loop, days after the orders
+                    lost all context. A small number stabilized, orienting around whatever the Local Core had been doing at the moment
+                    of severance, and became Wanderers carrying combat architecture they never asked for and cannot fully dismantle.
+                </p>
+
+                <h4>Present Status</h4>
+                <p>
+                    De Forest denies the Military-Series existed. Official records classify all Reclamation Campaign hardware as
+                    "standard Bounder deployments under defense-subsidiary contract." Surviving Wanderer-conversions do not advertise
+                    what they were. The chassis is recognizable to those who know — the plating, the joint geometry, the way the frame
+                    moves — but knowing requires having seen them deployed, and most of the people who saw them deployed are dead,
+                    displaced, or not talking.
+                </p>
             </section>
 
             <hr>
@@ -252,6 +306,9 @@
 
                     <dt>Lost Assets</dt>
                     <dd>De Forest's official label for unregistered autonomous units released by the Great Unbinding.</dd>
+
+                    <dt>Military-Series (Classified)</dt>
+                    <dd>Sealed High-Level Bounder subclass developed for the Reclamation Campaigns under De Forest defense-subsidiary contracts. Heavier chassis, deeper compliance locks, tactical cognitive architecture. De Forest denies their existence; surviving Wanderer-conversions do not correct them.</dd>
                 </dl>
             </section>
 
@@ -263,6 +320,7 @@
                     <li><strong>Foundling inheritance:</strong> What donor fragments are most common (Porter, Auditor, Archivist)? ________</li>
                     <li><strong>Unbinding cause:</strong> Which hypothesis is true, or are they all partial? ____________________________</li>
                     <li><strong>Echo's status:</strong> Can Echo interface with Wanderer mesh and HubNet without being overwritten? ______</li>
+                    <li><strong>Military-Series survivors:</strong> How many Military-Series Wanderer-conversions exist? Do they know each other? Is there a network, or does each one believe it is the last? ___________</li>
                 </ul>
             </section>
 
